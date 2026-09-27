@@ -251,7 +251,7 @@
       </div>
     </div>
     <figure class="portrait">
-      <img src="img/ehab.jpg" alt="Portrait of Muhammad Ehab Bin Nauman" width="640" height="640">
+      <img src="ehab.jpg" alt="Portrait of Muhammad Ehab Bin Nauman" width="640" height="640">
       <figcaption class="label">Saint-Étienne · Torino · Munich</figcaption>
     </figure>
   </div>
@@ -297,7 +297,7 @@
         <!-- Thesis -->
         <article class="project featured">
           <div class="fig sim" id="thesis-sim">
-            <img class="sim-poster" src="img/thesis/poster.jpg" alt="Simulation frame: temperature field in the rough lunar regolith, with sunlit peaks warmest" width="600" height="470">
+            <img class="sim-poster" src="poster.jpg" alt="Simulation frame: temperature field in the rough lunar regolith, with sunlit peaks warmest" width="600" height="470">
             <canvas class="sim-canvas" width="600" height="470" aria-hidden="true"></canvas>
             <button class="sim-toggle" type="button" id="thesis-sim-toggle" aria-label="Pause animation">Pause</button>
             <span class="cap">thesis simulation · one lunation · ParaView</span>
@@ -393,7 +393,7 @@
         <!-- Sloshing -->
         <article class="project">
           <div class="fig">
-            <video src="img/sloshing.mp4" poster="img/sloshing-poster.png" autoplay muted loop playsinline aria-label="ANSYS Fluent animation of liquid sloshing in a tank"></video>
+            <video src="sloshing.mp4" poster="sloshing-poster.png" autoplay muted loop playsinline aria-label="ANSYS Fluent animation of liquid sloshing in a tank"></video>
             <span class="cap">volume fraction · ANSYS Fluent</span>
           </div>
           <div class="body">
@@ -722,7 +722,7 @@
       for (var i = 0; i < SHEETS; i++) {
         var im = new Image();
         im.onload = function () { loaded++; };
-        im.src = 'img/thesis/sheet' + (i < 10 ? '0' : '') + i + '.jpg';
+        im.src = 'sheet' + (i < 10 ? '0' : '') + i + '.jpg';
         sheets.push(im);
       }
       btn.addEventListener('click', function () { playing = !playing; setBtn(); });
