@@ -128,9 +128,9 @@
     display: flex; flex-direction: column;
   }
   .project .fig { background: var(--ground); border-bottom: 1px solid var(--line); aspect-ratio: 16 / 8; position: relative; }
-  .project .fig svg, .project .fig video, .project .fig img { display: block; width: 100%; height: 100%; }
+  .project .fig svg, .project .fig video, .project .fig .fig-img { display: block; width: 100%; height: 100%; }
   .project .fig video { object-fit: cover; object-position: 50% 45%; }
-  .project .fig img { object-fit: cover; }
+  .project .fig .fig-img { object-fit: cover; }
   .project .fig .cap {
     position: absolute; left: 12px; bottom: 10px; font: 500 0.7rem var(--mono); color: var(--muted);
     background: color-mix(in srgb, var(--ground) 80%, transparent); padding: 2px 7px; border-radius: 4px;
@@ -139,6 +139,7 @@
   .sim-poster, .sim-canvas {
     position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; display: block;
   }
+  .sim-poster[hidden] { display: none; }
   .sim-toggle {
     position: absolute; right: 12px; bottom: 10px; z-index: 1;
     font: 500 0.72rem var(--mono); color: #0F1830; background: rgba(255,255,255,0.9);
@@ -413,11 +414,11 @@
         <!-- Onera M6 -->
         <article class="project">
           <div class="fig">
-            <img src="onera-m6.jpg" alt="ANSYS Fluent velocity contour at the root chord of the Onera M6 wing at 55° angle of attack, showing a large separated wake above the wing" width="470" height="235" loading="lazy">
+            <img class="fig-img" src="onera-m6.jpg" alt="ANSYS Fluent velocity contour at the root chord of the Onera M6 wing at 55° angle of attack, showing a large separated wake above the wing" width="470" height="235" loading="lazy">
             <span class="cap">velocity · root chord · α = 55°</span>
           </div>
           <div class="body">
-            <p class="label">Course project · Mines Saint-Étienne · team of 3</p>
+            <p class="label">Course project · Mines Saint-Étienne · 2025 · team of 3</p>
             <h3>Stall angle of the Onera M6 wing</h3>
             <p class="summary">An ANSYS Fluent study of the Onera M6 swept wing from −3° to 55° angle of attack, mapping its lift and drag curves to find where it stalls.</p>
             <ul>
